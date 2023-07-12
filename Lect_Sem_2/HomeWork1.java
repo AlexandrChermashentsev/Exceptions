@@ -16,9 +16,10 @@ public class HomeWork1 {
     private static float inputFloatNumber(){
         boolean flag = true;
         Float floatNumber = null;
+        Scanner scanner = new Scanner(System.in);
         while (flag) {
             System.out.println("Enter the float number, where the delimiter is '.'");
-            String strFloatNumber = new Scanner(System.in).nextLine();
+            String strFloatNumber = scanner.nextLine();
             try {
                 floatNumber = Float.parseFloat(strFloatNumber);
                 flag = false;
